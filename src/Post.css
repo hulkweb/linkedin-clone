@@ -1,0 +1,100 @@
+.Post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin: 0 auto;
+     margin-top: 20px;
+     
+}
+
+.Post .SinglePost{
+    display: flex;
+    
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    width: 500px;
+   margin-top: 20px;
+}
+
+.SinglePost>.postHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.SinglePost>.postHeader>p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.SinglePost>.postHeader>p>span:first-child{
+    font-size: large;
+    font-weight: 500;
+}
+.SinglePost>.postHeader>p>span:last-child{
+    font-size: small;
+    font-weight: 300;
+}
+.SinglePost>h3{
+    font-size: 17px;
+    font-weight: 450;
+    text-align: left;
+}
+.SinglePost>.img_container>img{
+    max-width: 500px;
+   margin: 0 auto;
+}
+.SinglePost>.img_container{
+    width: 100%;
+    display: flex;
+    
+}
+.SinglePost>.postBottom{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid grey;
+    
+}
+.SinglePost>.postBottom>.postOption{
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin:5px auto;
+    color: grey;
+}
+.SinglePost>.postBottom>.postOption:hover{
+background-color: rgb(228, 227, 227);
+}
+.SinglePost>.postBottom>.postOption>h4{
+    margin-top:  0px ;
+    margin-bottom:  0px ;
+    margin-left: 10px;
+}
+.SinglePost>.postBottom>.postOption>svg{
+    margin-top: 0px;
+    margin-bottom:  0px ;
+    color: grey;
+}
+@media (max-width:536px){
+    .Post>.SinglePost{
+        width: 300px;
+
+    }
+    .SinglePost>.img_container>img{
+        max-width: 300px;
+       margin: 0 auto;
+       height: a;
+    } 
+    .SinglePost>.postBottom>.postOption{
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,111 @@
+.Header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    box-shadow: 0px 4px 8px -9px rgba(0,0,0,0.75);
+    padding: 0px;
+    z-index: 10;
+}
+.header_inside{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media(max-width:500px){
+   .header_inside{
+       width: 100%;
+   } 
+}
+.left_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 0.4;
+    padding: 10px ;
+}
+.left_header>img{
+    height: 40px;
+    margin-top: 5px;
+}
+.left_header .search_option{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(202, 217, 226,0.6);
+    flex: 1;
+    padding: 0px 10px;
+    border-radius: 5px;
+    height: 45px;
+    margin: 5px 10px;
+}
+.left_header .search_option>svg{
+
+margin-top: 10px;
+}
+.left_header .search_option input{
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    background-color: rgb(202, 217, 226,0.3);
+    margin-bottom: auto;
+    font-size: 15px;
+    margin-top: 5px;
+    
+}
+.header_Center{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-right: 1px solid grey;
+margin-bottom: 0;
+padding: 0;
+flex: 1;
+}
+.header_Center>.header_option{
+    display: flex;
+    flex-direction: column;
+   padding: 5px;
+
+    margin: 0px ;
+    justify-content: center;
+    width: 90px;
+}
+.header_Center>.header_option:nth-child(1){
+ border-bottom: 2px solid grey;
+}
+.header_Center>.header_option>span{
+    font-size: small;
+    margin-top: 2px;
+   margin-bottom: 0px;
+   margin: 0 auto;
+}
+.header_Center>.header_option>svg ,.header_Center>.header_option .MuiAvatar-root {
+    font-size: 29px;
+    margin: 0 auto;
+}
+.header_Center>.header_option:hover{
+   color: grey;
+}
+.header_right{
+    flex: 0.3;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+     /* background-coor: #f3f3f3;l */
+}
+.header_right svg{
+    margin-left: 0px;
+    float: left;
+    font-size: 29px;
+    margin: 0 auto;
+}
+.header_right  span{
+    font-size: small;
+    margin-top: 2px;
+   margin-bottom: 0px;
+   margin: 0 auto;
+}

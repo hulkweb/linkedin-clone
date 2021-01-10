@@ -1,0 +1,98 @@
+.Left{
+    /* flex: 0.2; */
+   
+    border-radius: 10px;
+    height: fit-content;
+    flex: 0.2;
+
+}
+.left_inner{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    flex: 0.3;
+    padding: 0px;
+    box-shadow: 4px 4px -6px -8px;
+}
+.left_top_one{
+    background-image:linear-gradient(to left,#16f716,#f363f3,orange);
+    height: 100px;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.left_top_two{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: rgb(255, 255, 255,1);
+    padding-top: 50px;
+    margin: 0px;
+  border-bottom: 1px solid #000000;
+}
+.left_top_two .MuiAvatar-root {
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    margin-top:-90px ;
+    z-index: 10;
+    
+    margin-left: 85px;
+
+}
+.left_top_two >h3{
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+
+}
+.left_top_two  p{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0 auto; 
+    margin-top: 0px;
+
+}
+.user_info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: grey;
+    font-size: 18px;
+     background-color: #fff;
+     justify-content: space-between;
+}
+.user_info>.info_item{
+  
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 5px;
+}
+.user_info span:nth-child(2){
+  
+
+    color: blue;
+
+}
+.left_bottom{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    border-top: 1px solid grey;
+}

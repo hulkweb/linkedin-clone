@@ -1,0 +1,77 @@
+.CreatePost{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    background-color: #fff;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: transparent;
+    border-radius: 15px;
+    top: 0px;
+}
+
+.CreatePost>form{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 10px;
+}
+@media (max-width:536px){
+    .CreatePost>form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        }
+        .CreatePost__options:nth-child(3){
+          display: none;
+          
+        }
+}
+.CreatePost>form>svg{
+    margin: 5px 10px;
+    background-color: rgba(225, 232, 238, 0.8);
+    padding: 10px;
+    font-size:30px;
+    border-radius: 50%;
+}
+.CreatePost>form>input{
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(225, 232, 238, 0.8);
+    margin: 5px 10px;
+    padding:10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.CreatePost>form>input:first-child{
+    flex: 1;
+}
+.CreatePost__option{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+.CreatePost__options{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 10px;
+ 
+}
+.CreatePost__options:hover{
+    background-color: rgba(225, 232, 238, 0.8);
+}
+.CreatePost__options>h4{
+ padding: 5px 10px;
+ margin: 0px 0px;
+}
+.CreatePost__options>svg{
+    font-size: 29px;
+}
